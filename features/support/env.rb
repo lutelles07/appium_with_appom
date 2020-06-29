@@ -6,9 +6,8 @@ require 'cucumber'
 require 'rspec/expectations'
 require 'pry'
 
-caps = Appium.load_appium_txt(
-  file: File.expand_path('../../appium.txt', __dir__), verbose: true
-)
+APP = "#{Dir.pwd}/app/Calculator_v7.8.apk"
+caps = YAML.safe_load(ERB.new(File.read('config/capabilities.yml')).result, aliases: true)
 
 Appom.register_driver do
   Appium::Driver.new(caps, true)

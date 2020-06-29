@@ -1,0 +1,10 @@
+caps:
+  platformName: "Android"
+  deviceName: "Mydevice"
+  app: <%= APP %>
+  appPackage: "com.google.android.calculator"
+  disableWindowAnimation: true
+  autoGrantPermissions: true
+
+appium_lib:
+  server_url: "http://127.0.0.1:4723/wd/hub"
