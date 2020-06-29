@@ -1,0 +1,11 @@
+[caps]
+platformName = "Android"
+deviceName = "Mydevice"
+app = "/Users/lucianobarreto/Automation/appium_appom/Calculator_v7.8.apk"
+appPackage = "com.google.android.calculator"
+disableWindowAnimation= false
+autoGrantPermissions= true
+
+[appium_lib]
+server_url = "http://127.0.0.1:4723/wd/hub"
+
