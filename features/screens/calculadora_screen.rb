@@ -13,6 +13,7 @@ class Calculator < Appom::Page
   end
 
   def sum(value1, value2)
+    wait(5) { button(text: '0') }
     button(text: value1.to_s).click
     add.click
     button(text: value2.to_s).click
@@ -20,6 +21,7 @@ class Calculator < Appom::Page
   end
   
   def divide(value1, value2)
+    wait(5) { button(text: '0') }
     button(text: value1.to_s).click
     div.click
     button(text: value2.to_s).click

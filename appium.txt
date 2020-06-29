@@ -1,7 +1,7 @@
 [caps]
 platformName = "Android"
 deviceName = "Mydevice"
-app = "/Users/lucianobarreto/Automation/appium_appom/Calculator_v7.8.apk"
+app = "/Users/lucianobarreto/Automation/appium_with_appom/app/Calculator_v7.8.apk"
 appPackage = "com.google.android.calculator"
 disableWindowAnimation= false
 autoGrantPermissions= true
