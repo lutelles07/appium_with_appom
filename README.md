@@ -3,7 +3,7 @@
 ## **Dependências**
 
     * RVM
-    * Ruby 2.6.5
+    * Ruby 2.6.6
 
 ## **Instruções de Instalação**
 
