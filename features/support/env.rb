@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'bundler'
 Bundler.require(:test)
 require 'appom'
@@ -7,7 +9,8 @@ require 'rspec/expectations'
 require 'pry'
 
 APP = "#{Dir.pwd}/app/Calculator_v7.8.apk"
-caps = YAML.safe_load(ERB.new(File.read('config/capabilities.yml')).result, aliases: true)
+path_caps = 'config/capabilities.yml'
+caps = YAML.safe_load(ERB.new(File.read(path_caps)).result, aliases: true)
 
 Appom.register_driver do
   Appium::Driver.new(caps, true)

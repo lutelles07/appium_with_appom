@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Dado('que eu estou com a calculadora aberta') do
   @calculator = Calculator.new
   elemento = @calculator.check_display
